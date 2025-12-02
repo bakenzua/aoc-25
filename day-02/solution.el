@@ -24,9 +24,11 @@
            for (start end) = (mapcar #'string-to-number (split-string range "-"))
            do (cl-loop for n from start to end
                        for n-str = (number-to-string n)
+                       ;; keep emacs responsive!
+                       do (sit-for 0.001)
                        when (string-match-p regexp n-str)
                        do (cl-incf invalid-id-count n)
-                       do (sit-for 0.001))
+                       )
            finally return invalid-id-count))
 
 (defun day-02-part1 (input)
