@@ -1,7 +1,8 @@
 ;;; solution.el --- Day 1: Puzzle Title
 
 ;;; Commentary:
-;; Solutions for Advent of Code Day 1
+;; Solutions for Advent of Code Day 2
+;; VERY VERY SLOW!!
 
 ;;; Code:
 
